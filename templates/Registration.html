@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: fixed;
+            left: 22%;
+            right: 22%;
+            background-color: #e5f6e9;
+        }
+
+        .box h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .box p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 767.98px) {
+            .box {
+                width: 50%;
+                padding: 20px;
+                top: 15%;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .box {
+                width: 100%;
+                padding: 20px;
+              
+                left: 0;
+                top: 15%;
+            }
+        }
+        #LofinHeading{
+            text-align: center;
+            background-color: rgb(7, 130, 13);
+        }
+        #lkoginBtn{
+            background-color: rgb(218, 117, 21);
+        }
+        .registrationTopTitle{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="LofinHeading" class="p-2">
+        <h1 class="registrationTopTitle">EASY  FARM</h1>
+       
+       </div>
+    <div class="container d-flex align-items-center justify-content-center pt-5 mt-5">
+        <div class="box ">
+            <h2>LOGIN</h2>
+            <div class="pb-1">
+                <div class="pt-4 ">
+                 <input class="w-50 p-2 shadow rounded border " type="text" placeholder="Full Name" name="fullname">
+                </div>
+                <div class="pt-3  ">
+                    <input class="w-50 p-2 shadow rounded border" type="email" placeholder="Email" name="email">
+                </div>
+
+                <div class="pt-3  ">
+                    <input class="w-50 p-2 shadow rounded border" type="number" placeholder="Mobile No." name="mobileno">
+                </div>
+                <div class="pt-3  ">
+                    <input class="w-50 p-2 shadow rounded border" type="date" placeholder="Date Of Birth" name="dateofbirth">
+                </div>
+                <div class="pt-3  ">
+                    <input class="w-50 p-2 shadow rounded border" type="password" placeholder="Password" name="password">
+                </div>
+                <div class="pt-3  ">
+                    <input class="w-50 p-2 shadow rounded border" type="password" placeholder=" Confirm Password" name=" confirmpassword">
+                </div>
+                <div class="pt-3">
+                    <button id="lkoginBtn" type="submit" class="w-50 p-2 shadow rounded border"> REGISTRATION</button>
+                </div>
+                <div class="pt-3">
+                    <a href="" class="shadow ">Forget Password</a>
+                </div>
+                <div class="pt-3 mt-4 ">
+                    <span class="fa fa-instagram shadow " style="padding:3px;font-size:25px;color:red"></span>
+                    <span class="fa fa-envelope shadow " style="padding:3px;font-size:25px;color:rgb(109, 99, 99)"></span>
+                    <span class="fa fa-facebook-f shadow " style="padding:3px;font-size:25px;color:blue"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

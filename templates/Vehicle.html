@@ -1,0 +1,64 @@
+<style>
+   .products_Price{
+        font-size: 21px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    #ProductBox:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+#ProductBox {
+  padding: 10px;
+  background-color: rgb(244, 249, 244);
+  transition: transform .2s;
+  width: 250px;
+  height: 240px;
+  margin: 0 auto;
+  text-align: center;
+}
+.img{
+   width:130px;
+   height: 100px;
+   align-self: center;
+}
+#vehicleBTNBuy{
+  background-color: rgb(218, 116, 15);
+  font-weight: 800;
+}
+#vehicleBTNCard{
+  background-color: rgb(56, 136, 89);
+  font-weight: 800;
+}
+</style>
+
+<body>
+  {% extends 'base.html' %}
+
+  {% block content %}
+  {% for Product in serviceData %}
+
+  {% for item in serviceData  %}
+
+  <div class="row m-4 shadow" style="float:left; text-align:center; " id="ProductBox">
+      <div class="col-md-3" style="  width: 200px; height: 250px;">
+          <img class="img ms-4" src="{{ item.vahicle_Img.url }}" alt="{{ item.products_Img }}">
+          <div class="products_Name pt-3">{{ item.vahicle_Name}}</div>
+          <div class="products_Price">₹ {{item.vahicle_Price}} / Day</div>
+          <div class="">
+            <button class="m-1 btn shadow" id="vehicleBTNBuy">BUY</button><button class="m-1  btn shadow " id="vehicleBTNCard">CARD</button>
+          </div>
+          <!-- <div>{{ item.products_Description}}</div>  -->
+          <!-- <div>{{ item.products_Description}}</div> -->
+      </div>
+  </div>
+
+  {% endfor %}
+
+  {% endfor %}
+
+  {% endblock %}
+</body>
+
+</html>
